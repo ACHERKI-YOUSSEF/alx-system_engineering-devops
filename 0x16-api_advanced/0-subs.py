@@ -20,3 +20,4 @@ def number_of_subscribers(subreddit):
     if not subs:
         return 0
     return subs
+
