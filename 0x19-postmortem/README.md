@@ -1,4 +1,4 @@
-ssue Summary
+Issue Summary
 Duration: 2024-08-15, 14:00 UTC to 17:30 UTC (3 hours, 30 minutes)
 Impact: Imagine trying to buy your favorite gadget online, but instead of a smooth checkout, you’re stuck in an endless loading loop. That’s what 75% of our users experienced during this outage. The checkout process was so slow that many users gave up, leading to a 20% drop in completed transactions. Yikes!
 Root Cause: The culprit? A sneaky memory leak in our Redis caching layer that slowly ate up all available resources until everything came to a grinding halt.
@@ -34,5 +34,4 @@ Automate Rollbacks: Create a script that auto-reverts deployments if they cause 
 
 Final Thoughts
 We learned a valuable lesson here: even the smallest updates can cause big headaches. But with better monitoring, testing, and rollback strategies, we’re ready to tackle the next challenge—hopefully with fewer surprises and a lot more uptime.
-
 
