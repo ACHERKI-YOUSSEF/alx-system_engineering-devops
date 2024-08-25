@@ -1,4 +1,4 @@
-#!/bin/bash
-# Gracefully reloads Gunicorn.
+#!/usr/bin/env bash
+# This bash script reloads gunicorn no downtime
 
-ps aux | grep gunicorn | awk '{ print $2 }' | xargs kill -HUP
+pgrep gunicorn | xargs -I {} kill -HUP {}
